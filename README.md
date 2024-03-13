@@ -12,3 +12,5 @@ Thermometer with M5StickCPlus2.
         3V3     <-->  4.7k resister  <-->  GPIO 25      
         GPIO 25 <-->  terminal A of thermistor      
         GND     <-->  terminal B of thermistor
+
+   board manager:  https://raw.githubusercontent.com/espressif/arduino-esp32/ghpages/package_esp32_dev_index.json.
