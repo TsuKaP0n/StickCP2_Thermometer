@@ -1,6 +1,5 @@
 Thermometer with M5StickCPlus2.
-
-   board manager:  https://raw.githubusercontent.com/espressif/arduino-esp32/ghpages/package_esp32_dev_index.json
+      board manager:  https://raw.githubusercontent.com/espressif/arduino-esp32/ghpages/package_esp32_dev_index.json
 
    needs:
 
