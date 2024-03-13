@@ -1,5 +1,7 @@
 Thermometer with M5StickCPlus2.
 
+   board manager:  https://raw.githubusercontent.com/espressif/arduino-esp32/ghpages/package_esp32_dev_index.json
+
    needs:
 
     - M5StickC Plus2                  https://docs.m5stack.com/en/core/M5StickC%20PLUS2
@@ -13,4 +15,4 @@ Thermometer with M5StickCPlus2.
         GPIO 25 <-->  terminal A of thermistor      
         GND     <-->  terminal B of thermistor
 
-   board manager:  https://raw.githubusercontent.com/espressif/arduino-esp32/ghpages/package_esp32_dev_index.json.
+   
