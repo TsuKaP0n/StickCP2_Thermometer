@@ -4,7 +4,7 @@ Thermometer with M5StickCPlus2
     - thermistor: SEMITEC/ 103JT-050
     - 4.7k metal-glaze resistor
     wiring:
-      M5Stick 3V3 <--> GPIO 25
+      M5Stick 3V3 <--> resister <--> GPIO 25
       GPIO 25     <--> terminal A of thermistor
       GND         <--> terminal B of thermistor
 */
@@ -51,13 +51,13 @@ float Calc_thermistorTemperature(float Bvalue, float Resistance, int ADCvalue)
 
 int getADC_OverSampling(uint8_t pin, int nSamples)
 {
-	int i;
-	int accumulator = 0;
-	for (i = 0; i < nSamples;  i++) {
-		accumulator += analogRead(pin);
-		ets_delay_us(10);  // delay 10 microseconds
-	}
-	return accumulator / nSamples;
+  int i;
+  int sum = 0;
+  for (i = 0; i < nSamples; i++) {
+    sum += analogRead(pin);
+    ets_delay_us(10);
+  }
+  return sum / nSamples;
 }
 
 void Get_sensorValues()
